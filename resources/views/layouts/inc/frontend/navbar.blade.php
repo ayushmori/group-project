@@ -5,12 +5,12 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
 
 <!-- Main Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
 
     <!-- Logo (Left-aligned) -->
     <a href="#">
-      <img class="navbar-brand navbar-logo w-5" src="//vashiisl.com/cdn/shop/files/logo_f3ec1b43-cd32-4afd-8b30-9c59aa0c4746_500x126.png?v=1664344683" alt="">
+      <img class="navbar-brand navbar-logo w-5" src="{{ asset('assets/silder/logo.jpg') }}" alt="">
     </a>
 
     <!-- Search Bar (Centered) -->
@@ -47,7 +47,7 @@
 </nav>
 
 <!-- Sub Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2973B9">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Brand</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
