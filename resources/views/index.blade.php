@@ -473,7 +473,7 @@
         </div>
     </div>
 
-
+    
     <div id="silder" class="carousel slide mx-auto mt-5" data-bs-ride="carousel" data-bs-interval="5000">
         <!-- Indicators/Dots -->
         <div class="carousel-indicators">
