@@ -40,8 +40,27 @@
         </ul>
       </div>
 
-      <!-- Download Button -->
-      <a href="#" class="btn btn-primary">Download</a>
+
+      
+      <!-- Login  -->
+      @guest
+      <li><a href="{{ route('login') }}" class="nav-link">Login</a></li>
+      <li><a href="{{ route('register') }}" class="nav-link">Register</a></li>
+    @else
+      <li><a href="#" class="nav-link">{{ Auth::user()->name }}</a></li>
+      <li>
+        <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+          Logout
+        </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+          @csrf
+        </form>
+      </li>
+    @endguest
+
+
+
+    
     </div>
   </div>
 </nav>
